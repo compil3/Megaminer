@@ -1,0 +1,188 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{D99E2B54-9A88-48AE-B2C7-23FC5D6F14B6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>WindowsApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Megaminer</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include="7z.dll" />
+    <Content Include="changelog.txt" />
+    <Content Include="Config.txt" />
+    <Content Include="Logs\empty.txt" />
+    <Content Include="Patterns\excavatorPattern.txt" />
+    <Content Include="Patterns\ProspectorPattern.txt" />
+    <Content Include="Stats\empty.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\FETCH_HEAD" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\master" />
+    <None Include=".git\logs\refs\remotes\origin\HEAD" />
+    <None Include=".git\logs\refs\remotes\upstream\master" />
+    <None Include=".git\objects\0b\4978498d6a7502189634c9fdeea35cc88f8d0a" />
+    <None Include=".git\objects\16\2ba0df03f0625adc0e65455765c82a4531d0d2" />
+    <None Include=".git\objects\3b\dc3c12c983592573697b3313d2ae71851905d0" />
+    <None Include=".git\objects\57\e6ba267462b7cde40d1bcb51c14dbfdcc327e1" />
+    <None Include=".git\objects\74\96b5590d7215f5583e421c366d0004f10dd79a" />
+    <None Include=".git\objects\75\99446943e6e6d27648a2e5407912bb1a67c5cc" />
+    <None Include=".git\objects\a6\26a69939647811cbe26db032aee5666d7d6ce1" />
+    <None Include=".git\objects\b9\ed859ba7b882d759666e6cc88317e6ca4a8df9" />
+    <None Include=".git\objects\be\83608b94681c7228a23ba663ed44f55e5b899b" />
+    <None Include=".git\objects\d7\b29d098347faa1c8c057bbd44b3d00ea337c06" />
+    <None Include=".git\objects\fc\921f01d0d1b45a3ac4ece802cad6af1204473a" />
+    <None Include=".git\objects\ff\667dcd625c3d55e5be308024140ffd3c117ade" />
+    <None Include=".git\objects\pack\pack-04d48d01ffa5d56a498b218ac71cb206f921a3fd.idx" />
+    <None Include=".git\objects\pack\pack-04d48d01ffa5d56a498b218ac71cb206f921a3fd.pack" />
+    <None Include=".git\packed-refs" />
+    <None Include=".git\refs\heads\master" />
+    <None Include=".git\refs\remotes\origin\HEAD" />
+    <None Include=".git\refs\remotes\upstream\master" />
+    <None Include=".vs\MegaMiner-Gui\v15\.suo" />
+    <None Include="Additional Miners\A-ClaymoreCrypto97.json" />
+    <None Include="Additional Miners\A-SgminerHmq1725.json" />
+    <None Include="Additional Miners\Not Compatibles with more than one gpu group of same type\A-Prospector.json" />
+    <None Include="AutoStart Example - Auto with coin filter.bat" />
+    <None Include="AutoStart Example - one coin manual.bat" />
+    <None Include="AutoStart Example - Two pools on Auto - copia.bat" />
+    <None Include="opencl\AutoStart Example - Two pools on Auto.bat" />
+    <None Include="core.ps1" />
+    <None Include="Donation.ctr" />
+    <None Include="GPULIST.bat" />
+    <None Include="GPUList.ps1" />
+    <None Include="Include.ps1" />
+    <None Include="Megaminer.ps1" />
+    <None Include="Miners\A-CastXMR.json" />
+    <None Include="Miners\A-ClayDual.json" />
+    <None Include="Miners\A-ClaymoreCrypto.json" />
+    <None Include="Miners\A-ClaymoreETH.json" />
+    <None Include="Miners\A-ClaymoreZEC.json" />
+    <None Include="Miners\A-Gatelessgate.json" />
+    <None Include="Miners\A-nsgminer.json" />
+    <None Include="Miners\A-Sgminer.json" />
+    <None Include="Miners\A-SgminerBitcore.json" />
+    <None Include="Miners\A-SgminerHSR.json" />
+    <None Include="Miners\A-SgminerLyra2Z.json" />
+    <None Include="Miners\A-SgminerPhi.json" />
+    <None Include="Miners\A-SgminerSkein.json" />
+    <None Include="Miners\A-SgminerTribus.json" />
+    <None Include="Miners\A-SgminerXevan.json" />
+    <None Include="Miners\C-Jay4way.json" />
+    <None Include="Miners\C-JayAvx.json" />
+    <None Include="Miners\C-JayAvx2.json" />
+    <None Include="Miners\C-JaySse2.json" />
+    <None Include="Miners\C-XMrigGCC.json" />
+    <None Include="Miners\C-XMrigMSVC.json" />
+    <None Include="Miners\N-ccminer-2.2.json" />
+    <None Include="Miners\N-ccminerAlexis.json" />
+    <None Include="Miners\N-ccminerAlexisHSR.json" />
+    <None Include="Miners\N-ccminerDjm34.json" />
+    <None Include="Miners\N-CcminerKlaust.json" />
+    <None Include="Miners\N-CcminerNice.json" />
+    <None Include="Miners\N-ccminerPalgin.json" />
+    <None Include="Miners\N-CcminerPolytmos.json" />
+    <None Include="Miners\N-ccminerSkunk.json" />
+    <None Include="Miners\N-CcminerTpruvot.json" />
+    <None Include="Miners\N-ccminerX11g.json" />
+    <None Include="Miners\N-CcminerXevan.json" />
+    <None Include="Miners\N-ClayDual.json" />
+    <None Include="Miners\N-ClaymoreETH.json" />
+    <None Include="Miners\N-Dtsm.json" />
+    <None Include="Miners\N-EWBF.json" />
+    <None Include="Miners\N-Excavator.json" />
+    <None Include="Pools\AHASHPOOL.ps1" />
+    <None Include="Pools\BLOCKS_FACTORY.ps1" />
+    <None Include="Pools\FLYPOOL.ps1" />
+    <None Include="Pools\Hash_Refinery.ps1" />
+    <None Include="Pools\ITALYIIMP.ps1" />
+    <None Include="Pools\Mining_Pool_Hub.ps1" />
+    <None Include="Pools\NANOPOOL.ps1" />
+    <None Include="Pools\SUPRNOVA.ps1" />
+    <None Include="Pools\UNIMINING.ps1" />
+    <None Include="Pools\WHATTOMINE_VIRTUAL.ps1" />
+    <None Include="Pools\YIIMP.ps1" />
+    <None Include="Pools\Zpool.ps1" />
+    <None Include="readme.md" />
+    <None Include="Reset_Benchmark.bat" />
+    <None Include="START.bat" />
+    <None Include="Wrapper.ps1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="opencl\Cl.cs" />
+    <Compile Include="opencl\CommandQueue.cs" />
+    <Compile Include="opencl\Context.cs" />
+    <Compile Include="opencl\Device.cs" />
+    <Compile Include="opencl\Event.cs" />
+    <Compile Include="opencl\HandleObject.cs" />
+    <Compile Include="opencl\Kernel.cs" />
+    <Compile Include="opencl\Mem.cs" />
+    <Compile Include="opencl\NativeMethods.cs" />
+    <Compile Include="opencl\OpenClException.cs" />
+    <Compile Include="opencl\Platform.cs" />
+    <Compile Include="opencl\Program.cs" />
+    <Compile Include="opencl\RefCountedObject.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\lfs\objects\logs\" />
+    <Folder Include=".git\lfs\tmp\objects\" />
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\refs\tags\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
